@@ -8,15 +8,15 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   let domainList = [];
-  let pronoun = ["His", "Her"];
-  let adj = ["big", "small"];
-  let noun = ["wolf", "sheep"];
-  let domainNames = [".com", ".net"];
+  let pronoun = ["His", "Her", "They"];
+  let adj = ["big", "small", "wide"];
+  let noun = ["wolf", "sheep", "dog"];
+  let domainNames = [".com", ".net", ".edu"];
 
-  for (let i = 0; i < pronoun.length; i++) {
-    for (let j = 0; j < adj.length; j++) {
-      for (let k = 0; k < noun.length; k++) {
-        for (let l = 0; l < domainNames.length; l++) {
+  for (let i in pronoun) {
+    for (let j in adj) {
+      for (let k in noun) {
+        for (let l in domainNames) {
           domainList.push(pronoun[i] + adj[j] + noun[k] + domainNames[l]);
         }
       }
